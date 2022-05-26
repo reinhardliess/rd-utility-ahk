@@ -258,15 +258,14 @@ class rd_Utility
     * Converts string to array
     * Handles Unicode surrogate pairs better than StrSplit
     * @param {string} string - string to convert
-    * @param {integer} [maxParts:=-1] -
+    * @param {integer} [maxParts:=-1] - maximum number of substrings to return
     * @returns {string[]}
   */
   strToArray(string, maxParts := -1) {
-    Rx := new rd_RegExp()
+    re := new rd_RegExp()
 
-    matches := Rx.matchAll(string, "s).", maxParts)
-    parts := Rx.filterAll(matches, 0)
-    return parts
+    matches := re.matchAll(string, "s).", maxParts)
+    return re.filterAll(matches, 0)
   }
 
   /**
@@ -300,14 +299,14 @@ class rd_Utility
 
     ; OutputDebug, % "Start: " startingPos " End: " endingPos
 
-    Rx := new rd_RegExp()
+    re := new rd_RegExp()
 
     regex := "s)^"
     if (startingPos > 1) {
       regex .= format(".{{}{1}{}}", startingPos - 1)
     }
     regex .= format("(.{{}{1}{}})", endingPos - startingPos + 1)
-    match := Rx.match(string, regex)
+    match := re.match(string, regex)
     ; return Substr(string, startingPos, length)
     return match[1]
   }

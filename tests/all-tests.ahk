@@ -18,6 +18,7 @@ StringCaseSense Locale
 SetBatchLines, -1
 
 global assert := new unittesting()
+global U := new rd_Utility()
 
 OnError("ShowError")
 
