@@ -1,0 +1,6 @@
+.vscode/
+
+# temporary file created by test
+tests/temp*.*
+
+node_modules
