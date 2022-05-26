@@ -1,0 +1,37 @@
+{
+  "name": "rd-utility-ahk",
+  "version": "0.1.0",
+  "description": "A utility class providing string, file and miscellaneous methods for Autohotkey",
+  "main": "rd_Utility.ahk",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reinhardliess/rd-utility-ahk.git"
+  },
+  "keywords": [
+    "ahk",
+    "autohotkey",
+    "class",
+    "utility",
+    "file",
+    "strings",
+    "misc"
+  ],
+  "author": "Reinhard Liess",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reinhardliess/rd-utility-ahk/issues"
+  },
+  "homepage": "https://github.com/reinhardliess/rd-utility-ahk#readme",
+  "dependencies": {
+    "rd-regexp-ahk": "^0.1.2"
+  },
+  "devDependencies": {
+    "unit-testing.ahk": "^0.6.1"
+  }
+}
