@@ -1,6 +1,6 @@
 {
   "name": "rd-utility-ahk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A utility class providing string, file and miscellaneous methods for Autohotkey",
   "main": "rd_Utility.ahk",
   "directories": {
