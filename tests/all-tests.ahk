@@ -43,6 +43,10 @@ test_utility() {
   expected := "The quick brown fox jumped over the incredibly lazy dog.`r`n`r`nline3 line4"
   assert.equal(newStr, expected)
 
+  newStr   := U.convertToWrap(" The quick brown fox jumped over the incre-`ndibly lazy   dog.`n`nline3`nline4")
+  expected := "The quick brown fox jumped over the incredibly lazy dog.`n`nline3 line4"
+  assert.equal(newStr, expected)
+
   assert.label("encode/decode URI")
   assert.equal(U.uriDecode(U.uriEncode("老子")), "老子")
 

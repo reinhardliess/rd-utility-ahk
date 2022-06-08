@@ -31,10 +31,10 @@ class rd_Utility
   */
   convertToWrap(text) {
     ; remove hyphens
-    temp := StrReplace(text, "-`r`n")
+    temp := RegExReplace(text, "-`r?`n")
 
-    ; replace single CRLF with space but leave paragraphs intact
-    buffer := RegExReplace(temp, "(\S[^\S\r\n]*)\r?\n([^\S\r\n]*\S)", "$1 $2")
+    ; replace single (CR)LF with space but leave paragraphs intact
+    buffer := RegExReplace(temp, "(\S[^\S\r?\n]*)\r??\n([^\S\r?\n]*\S)", "$1 $2")
     ; remove unnecessary spaces
     return Trim(RegExReplace(buffer, "  +", " "))
   }
