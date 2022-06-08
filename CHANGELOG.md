@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- markdownlint-disable MD024 -->
 
+## [0.1.1] - 2022-06-08
+
+### Changed
+
+- Fix method `converToWrap`: added support for LF line endings
+
 ## [0.1.0] - 2022-05-26
 
 - Initial release

@@ -33,7 +33,7 @@ These classes will throw an exception in case of a serious error by default whic
 
 | Method          | Description                                                                                         |
 | --------------- | --------------------------------------------------------------------------------------------------- |
-| convertToWrap   | Converts formatted paragraphs with CRLF to wrap                                                     |
+| convertToWrap   | Converts formatted paragraphs with (CR)LF to wrap                                                     |
 | uriEncode       | Uri encode (JavaScript like)                                                                        |
 | uriDecode       | Uri decode (JavaScript like)                                                                        |
 | putVar          | Copies string to memory address, UTF-16 compatible                                                  |
