@@ -33,7 +33,7 @@ These classes will throw an exception in case of a serious error by default whic
 
 | Method          | Description                                                                                         |
 | --------------- | --------------------------------------------------------------------------------------------------- |
-| convertToWrap   | Converts formatted paragraphs with (CR)LF to wrap                                                     |
+| convertToWrap   | Converts formatted paragraphs with (CR)LF to wrap                                                   |
 | uriEncode       | Uri encode (JavaScript like)                                                                        |
 | uriDecode       | Uri decode (JavaScript like)                                                                        |
 | putVar          | Copies string to memory address, UTF-16 compatible                                                  |
@@ -65,6 +65,7 @@ This comes with a speed penalty though, see a benchmark [here](./tests/bench-str
 | fileAppend       | Appends string to file                                            |
 | fileTouch        | Creates empty file or updates modification date                   |
 | createUniqueFile | Creates empty file with unique name                               |
+| getFullPathName  | Retrieves full path name via Windows API                          |
 
 ### Misc Methods
 

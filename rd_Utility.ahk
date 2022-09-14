@@ -355,6 +355,22 @@ class rd_Utility
   }
 
   /**
+    * Retrieves full path name via Windows API
+    * https://www.autohotkey.com/boards/viewtopic.php?p=289536&sid=fb9bb8707bfd0a4e1282f517c986772e#p289536
+    * @param {string} path - path name
+    * @returns {string} full path name; ErrorLevel, A_LastError or error
+  */
+  GetFullPathName(path) {
+    size := DllCall("GetFullPathName", "str", path, "uint", 0, "ptr", 0, "ptr", 0, "uint")
+    VarSetCapacity(buffer, size * (A_IsUnicode ? 2 : 1))
+    ret := DllCall("GetFullPathName", "str", path, "uint", size, "str", buffer, "ptr", 0, "uint")
+    if (!ret) {
+      ErrorLevel := 1
+    }
+    return buffer
+  }
+
+  /**
    * Reads contents of text file into variable
    * @param {string} fileName - file name
    * @param {integer} [maxChars] - maximum number of characters to read

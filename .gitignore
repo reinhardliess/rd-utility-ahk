@@ -2,6 +2,6 @@
 
 # temporary file created by test
 tests/temp*.*
-
+local-*/
 node_modules
 *.log

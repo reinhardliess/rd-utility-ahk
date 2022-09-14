@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 <!-- markdownlint-disable MD024 -->
 
+## [0.2.0] - 2022-09-14
+
+### Added
+
+- Added method getFullPathName. Retrieves full path name via Windows API
+
 ## [0.1.1] - 2022-06-08
 
 ### Changed
